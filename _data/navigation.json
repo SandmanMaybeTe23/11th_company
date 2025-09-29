@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/index/"
+    },
+    {
+      "text": "Buy",
+      "url": "/under_construction/"
+    },
+
+     {
+      "text": "Contacts",
+      "url": "/under_construction/"
+    },
+         {
+      "text": "About",
+      "url": "/about/"
+    }
+
+
+  ]
+}

@@ -1,0 +1,86 @@
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(TitilliumWeb-Regular.ttf);
+}
+
+div {
+  font-family: myFirstFont;
+}
+
+
+/* hero2 */
+:root {
+  --hero-height: 60vh;
+  --hero-max-height: 600px;
+
+  --Brown-Orange: rgba(216, 123, 0);
+  --Orange: rgba(255, 165, 0);
+  --Black: rgba(10, 10, 10);
+  --Brown-Orange-nav: rgb(216, 123, 0);
+  --Wit: rgba(255, 255, 255);
+  --Background-Black: rgba(51, 51, 51);
+}
+
+body{
+  background-color: var(--Background-Black);
+  color: var(--Orange);
+  font-family: myFirstFont;
+}
+
+.nav_list{
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  list-style: none;
+ 
+  background-color: var(--Brown-Orange-nav);
+  
+  li {
+    
+    background-color: var(--Black);
+    margin-inline: 7rem;
+    font-size: 17px;
+    padding: 15px;
+    padding-inline: 20px;
+    
+  }
+
+  li:hover{
+    background-color: var(--Orange)
+  }
+  img{
+    max-width: 50px;
+    max-height: 50px;
+    padding-left:50px ;
+  }
+  a{
+    color: var(--Wit);
+  }
+  a:hover{
+    color: var(--Black);
+    background-color: var(--Orange);
+  }
+  
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  bottom: auto;
+}
+
+.hero{
+   display: grid;
+  grid-template-areas: "hero";
+  place-items: center;
+  height: var(--hero-height);
+  max-height: var(--hero-max-height);
+  background-color: rgba(0, 0, 0, 0.5); 
+}
