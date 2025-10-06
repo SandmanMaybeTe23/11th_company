@@ -36,20 +36,17 @@ body{
 
 .nav_list{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
   list-style: none;
- 
   background-color: var(--Brown-Orange-nav);
   
   li {
-    
     background-color: var(--Black);
-    margin-inline: 7rem;
     font-size: 17px;
     padding: 15px;
-    padding-inline: 20px;
-    
+    padding-inline: 20px;  
   }
 
   li:hover{
@@ -70,17 +67,118 @@ body{
   
 }
 
+
 footer{
   background-color: black;
   text-align: center;
   bottom: auto;
 }
 
-.hero{
-   display: grid;
+
+.hero {
+  display: grid;
   grid-template-areas: "hero";
   place-items: center;
   height: var(--hero-height);
   max-height: var(--hero-max-height);
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.hero>* {
+  grid-area: hero;
+}
+
+
+.hero>img {
+  z-index: -1;
+
+  object-fit: cover;
+  height: min(var(--hero-height), var(--hero-max-height));
+  width: 100%;
+}
+
+
+.box{
+
+  border: solid var(--Orange);
+  padding: 2rem;
+  background-color: var(--Black);
+  margin-inline: auto;
+  max-width: 80ch;
+  margin-top: 12ch;
+  margin-bottom: 12ch;
+}
+
+
+
+
+
+.box_with_img{
+
+  border: solid var(--Orange);
+  padding: 2rem;
+  background-color: var(--Black);
+  margin-inline: auto;
+  max-width: 80ch;
+  margin-top: 12ch;
+  margin-bottom: 12ch;
+  padding-bottom: 4rem;
+
+}
+
+
+
+.example-img{
+  max-width: 50%;
+  max-height: 50%;
+  width: 200px;
+  height: 200px;
+
+}
+
+
+
+.color-list{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 12ch;
+
+  li{
+    width: 10rem;
+    display: grid;
+    place-items: center;
+  }
+}
+
+
+.black {
+  background-color: var(--Black);
+}
+
+.orange {
+  background-color: var(--Orange);
+  color: var(--Black);
+}
+
+.brown-orange {
+  background-color: var(--Brown-Orange);
+  color: var(--Black);
+}
+
+.wit {
+  background-color: var(--Wit);
+  color: black;
+}
+
+.background-black {
+  background-color: var(--Background-Black);
+}
+
+.sliver {
+  background-color: var(--Brown-Orange-nav);
+  color: black;
 }

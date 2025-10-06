@@ -1,8 +1,11 @@
-<ul class="nav_list">
-  <img  src="/img/EP-4.svg" alt="">
-  {% for item in navigation.items %}
-  <li>  
-    <a href="{{ item.url }}">{{ item.text }}</a>
-  </li>
-  {% endfor %}
-</ul>
+
+  <ul class="nav_list">
+    <img  src="/img/EP-4.svg" alt="logo">
+      {% for item in navigation.items %}
+    <li>  
+        <a href="{{ item.url }}">{{ item.text }}</a>
+    </li>
+  
+    {% endfor %}
+
+  </ul>
