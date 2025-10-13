@@ -67,6 +67,31 @@ body{
   
 }
 
+.product_thing{
+ display: flex;
+ justify-content: space-around;
+ border: solid var(--Orange);
+ background-color: var(--Black);
+
+ margin-top: 12ch;
+ margin-bottom: 12ch;
+ 
+
+
+ img{
+  margin: 50px;
+  max-height: 200px;
+ }
+
+
+
+
+
+}
+
+
+
+
 
 footer{
   background-color: black;
